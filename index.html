@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JIMNEERS GLOBAL</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #333;
+      font-size: 16px;
+    }
+
+    .top-images {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px;
+      background: #ffffff;
+    }
+
+    .top-images img {
+      height: 150px;
+      max-width: 100%;
+    }
+
+    .top-images img.left-image {
+      transform: scale(0.65);
+      transform-origin: top left;
+    }
+
+    header {
+      background-color: #2794fa;
+      color: white;
+      padding: 25px 50px; /* Reduced from 50px to 25px */
+      text-align: center;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    header h1 {
+      font-family: Impact, sans-serif;
+      font-size: 30px; /* Reduced by 50% */
+      letter-spacing: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .slogan {
+      display: flex;
+      justify-content: space-between;
+      font-family: Impact, sans-serif;
+      font-size: 30px; /* Reduced by 50% */
+      letter-spacing: 5px;
+      margin-top: 5px;
+    }
+
+    .slogan div {
+      flex: 1;
+    }
+
+    nav {
+      background-color: #0055a5;
+      width: 100%;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 10px 30px;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      flex: 1;
+      text-align: center;
+    }
+
+    nav li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.5em; /* Reduced by 25% from 2em */
+      display: block;
+      padding: 10px 0;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    h1, h2, h3 {
+      color: #003366;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+      text-align: left;
+    }
+
+    h2 {
+      animation-delay: 0.2s;
+      font-size: 1.5em; /* 1.5 times base font size */
+    }
+
+    h3 {
+      font-size: 1.5em; /* 1.5 times base font size */
+    }
+
+    h3:nth-of-type(1) {
+      animation-delay: 0.4s;
+    }
+
+    h3:nth-of-type(2) {
+      animation-delay: 0.6s;
+    }
+
+    h3:nth-of-type(3) {
+      animation-delay: 0.8s;
+    }
+
+    h3.mission, h3.vision {
+      text-transform: uppercase;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    ul {
+      padding-left: 20px;
+      text-align: left;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .top-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .top-images img.left-image {
+        transform: scale(0.8);
+        transform-origin: top center;
+      }
+
+      .slogan {
+        flex-direction: column;
+        font-size: 18px;
+        text-align: center;
+        gap: 10px;
+      }
+
+      .slogan div {
+        text-align: center !important;
+      }
+
+      header h1 {
+        font-size: 24px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        padding: 0;
+      }
+
+      nav li {
+        width: 100%;
+      }
+
+      nav li a {
+        font-size: 1.2em;
+        padding: 15px 0;
+      }
+
+      section {
+        margin: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-images">
+    <img src="images/project1.jpg" alt="Project 1" class="left-image">
+    <img src="images/project2.jpg" alt="Project 2">
+  </div>
+
+  <header>
+    <h1>JIMNEERS GLOBAL LIMITED</h1>
+    <div class="slogan">
+      <div style="text-align: left;">CONCEPTUALIZE</div>
+      <div style="text-align: center;">VISUALIZE</div>
+      <div style="text-align: right;">ACTUALIZE</div>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="research-projects.html">Research Projects</a></li>
+      <li><a href="partnerships.html">Partnerships & Investments</a></li>
+      <li><a href="current-projects.html">Current Projects</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Engineering Tomorrow, Today</h2>
+    <p>
+      At <strong>JIMNEERS GLOBAL LIMITED</strong>, we believe engineering goes far beyond calculations and drawings. It is a transformative discipline that converts visionary ideas into robust, functional realities, delivering solutions that stand the test of time.
+    </p>
+    <p>
+      Leveraging expertise in oil & gas, civil infrastructure, and renewable energy sectors, we harness advanced simulation tools and innovative methodologies to tailor our services. Our commitment is to exceed technical requirements while driving sustainability, efficiency, and scalable growth.
+    </p>
+    <p>
+      We design and implement cutting-edge terminal automation systems that streamline operations, enhance safety, and improve efficiency in oil and gas terminals. Our solutions integrate advanced control, monitoring, and data acquisition technologies for real-time insights and regulatory compliance.
+    </p>
+
+    <h3 class="mission">Mission</h3>
+    <p>
+      At JIMNEERS GLOBAL, we conceptualize, visualize, and actualize precision-engineered solutions across the oil and gas, mechanical, civil, and renewable energy sectors, driven by advanced simulation, innovation, and purpose.
+    </p>
+
+    <h3 class="vision">Vision</h3>
+    <p>
+      To establish JIMNEERS GLOBAL as a world-class leader in structural and mechanical design, transforming ideas into resilient, optimized engineering solutions across energy and infrastructure sectors.
+    </p>
+
+    <h3>What We Do</h3>
+    <ul>
+      <li>Engineering Drawings</li>
+      <li>Technical Design</li>
+      <li>Project Schedules</li>
+      <li>Terminal Automation Systems</li>
+      <li>Consulting Services</li>
+    </ul>
+
+    <h3>Why Choose Us</h3>
+    <ul>
+      <li>Simulation-based Design</li>
+      <li>Industry-Grade Precision</li>
+      <li>Multidisciplinary Expertise</li>
+      <li>Transparent Pricing</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JIMNEERS GLOBAL. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
