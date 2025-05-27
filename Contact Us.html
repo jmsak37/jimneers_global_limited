@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - JIMNEERS GLOBAL</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background-color: #2794fa;
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: Impact, sans-serif;
+      font-size: 40px;
+      letter-spacing: 5px;
+      margin: 0;
+    }
+
+    .slogan {
+      display: flex;
+      justify-content: space-between;
+      font-family: Impact, sans-serif;
+      font-size: 40px;
+      letter-spacing: 5px;
+      margin-top: 5px;
+    }
+
+    .slogan div {
+      flex: 1;
+    }
+
+    nav {
+      background-color: #0055a5;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+      padding: 10px 0;
+      list-style: none;
+    }
+
+    nav li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav li a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    h2 {
+      color: #003366;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+      text-align: left;
+    }
+
+    .contact-info {
+      margin-bottom: 30px;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .contact-info a {
+      color: #0055a5;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      margin-bottom: 15px;
+      padding: 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+
+    button {
+      padding: 14px;
+      font-size: 1rem;
+      background-color: #0055a5;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-family: inherit;
+    }
+
+    button:hover {
+      background-color: #003f7f;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .slogan {
+        flex-direction: column;
+        font-size: 32px;
+        text-align: center;
+        gap: 10px;
+      }
+
+      .slogan div {
+        text-align: center !important;
+      }
+
+      header h1 {
+        font-size: 36px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      section {
+        margin: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JIMNEERS GLOBAL LIMITED</h1>
+    <div class="slogan">
+      <div style="text-align: left;">CONCEPTUALIZE</div>
+      <div style="text-align: center;">VISUALIZE</div>
+      <div style="text-align: right;">ACTUALIZE</div>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Research Projects</a></li>
+      <li><a href="#">Current Projects</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="contact.html" style="text-decoration: underline;">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Contact Us</h2>
+
+    <div class="contact-info">
+      <strong>JIMNEERS GLOBAL LIMITED</strong><br />
+      Tel: <a href="tel:+254113955700">+254 113 955 700</a><br />
+      Email: <a href="mailto:japhethmanduengineers@gmail.com">japhethmanduengineers@gmail.com</a><br />
+      Nairobi, Kenya
+    </div>
+
+    <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="subject" placeholder="Subject" />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JIMNEERS GLOBAL. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
